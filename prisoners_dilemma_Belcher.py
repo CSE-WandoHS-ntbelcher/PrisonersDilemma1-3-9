@@ -365,6 +365,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 
 
 
+    # FINAL VERSION
     # TEAM TEN WOOOOO 
     elif player == 10:
         if getting_team_name:
@@ -381,7 +382,6 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                     return 'c'  
                 else: # has a history of betraying
                     return 'b'
-
 
 
 
