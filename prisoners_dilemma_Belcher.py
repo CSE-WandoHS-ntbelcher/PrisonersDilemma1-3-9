@@ -198,33 +198,28 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 
 
 
-
-
-
-
-
-
-
-
     ######
     ######
     #
     elif player == 4:
         if getting_team_name:
-            return 'betray every 3rd round'
+            return 'Sean and Caroline' 
         else:
-            # use history, opponent_history, score, opponent_score
-            # to compute your strategy
-            size = len(history)
-            if(size%3==0): #the number of rounds played is a multiple of 3
+            
+            if len(opponent_history) == 0:
                 return 'c'
             else:
-                return 'b'
-    
-    
-    
-
-
+                return'b'
+                        # use history, opponent_history, score, opponent_score
+                        # to compute your strategy
+                size = len(history)
+                if (size%3 == 0):  
+            #the number of rounds played is a multiple of 3
+                    return 'b'
+                else:
+                    return 'c'
+                if len(opponent_history):
+                    return 'b'
 
 
 
